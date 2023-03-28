@@ -1,0 +1,33 @@
+.post {
+  max-width: 600px;
+	margin: 20px auto;
+  background-color: rgb(65, 65, 65);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 10px;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+}
+
+.message {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 0px 15px;
+}
+
+.like {
+  font-size: 14px;
+  padding: 10px 0px 0px 0px;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}

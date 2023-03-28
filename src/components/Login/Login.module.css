@@ -1,0 +1,16 @@
+.form {
+  margin-top: 100px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 183px;
+  margin: 0 auto;
+}
+
+.formTitle {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,85 @@
+/* ===================================================================== */
+/* ОБНУЛЕНИЕ */
+
+/* Все теги по умолчанию имеют свои свойства в зависимости от бразуера и их перед началом работы надо сбрасывать чтобы ничего не мешало друг другу */
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,*:before, *:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Убираем обводки линий некоторых браузеров */
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+/* Делаем эти теги блочными */
+nav, footer, header, aside{display: block;}
+
+/* Уравнивают параметры шрифтов и элементов для разных браузеров */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Просим наследовать наш подключенный шрифт */
+input, button, textarea {font-family: inherit;}
+
+/* Убирают некоторые особенности в разных браузерах */
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li{list-style: none;}
+img {vertical-align: top;}
+
+/* Обнуляем все заголовки h */
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+/* ===================================================================== */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #141414
+}
+/* ===================================================================== */
+
+.app-wrapper {
+  width: 100%;
+	max-width: 1200px; 
+	margin: 0 auto;
+
+  display: grid; /* Делаем нашу структуру из гридов */
+
+  grid-template-areas: /* Как выстраивается наша страница по гридам */
+  "h h" /* Занимает  h две колонки*/
+  "n c"; /* Занимает n и с по одной колонке */
+  
+  grid-gap: 15px;
+
+  grid-template-rows: 60px 1fr; /* Сколько строк будет внутри грида в нашем случае 2 */
+  grid-template-columns: 2fr 10fr; /* Сколько колонок */
+  /* grid-gap: 10px;  Расстояние между элементами */
+}
+
+.app-wrapper-content {
+    grid-area: c; /* Даём название в гридках (псевдоним) */
+    background-color:  #222222;
+    height: auto;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0px 15px 15px 0px;
+}

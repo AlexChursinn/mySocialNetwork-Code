@@ -1,0 +1,45 @@
+.descriptionBlock {
+	margin-top: 50px;
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+.choosePhoto {
+	margin-top: 20px;
+}
+
+.profileImage img{
+	width: 800px;
+}
+
+.mainPhoto {
+	max-width: 500px;
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.contact {
+	padding-left: 10px;
+	margin: 10px 0px;
+}
+
+.edit {
+	margin: 0px 0px 0px 50px;
+	font-size: 16px;
+}
+
+.contactBtn {
+	background: #fff;
+  padding: 5px 20px;
+  color: #000;
+	border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+	margin: 0px 0px 10px 0px;
+}
+
+.contactBtn:hover {
+  opacity: 0.5; 
+}
